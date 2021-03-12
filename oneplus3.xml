@@ -2,9 +2,10 @@
 <manifest>
   <remote fetch="https://github.com/" name="github"/>
   <include name="base-q.xml"/>
-
-  <project path="vendor/oneplus/oneplus3" name="Gaurav241/vendor_oneplus" remote="github" revision="ten" />
+  
+<!--   OnePlus 3/3T -->
+  <project path="device/oneplus/oneplus3" name="ittat/device_oneplus_oneplus3" remote="github" revision="b2g_q" /> 
+  <project path="vendor/oneplus/oneplus3" name="ittat/vendor_oneplus_oneplus3" remote="github" revision="b2g_q" />
   <project path="kernel/oneplus/msm8996" name="PixelExperience-Devices/kernel_oneplus_msm8996"   remote="github" revision="ten" />
   <project path="device/qcom/sepolicy-legacy-um" name="PixelExperience/device_qcom_sepolicy-legacy-um"   remote="github" revision="ten" />
-  <project path="device/oneplus/oneplus3" name="ittat/device_oneplus_oneplus3" remote="github" revision="b2g_q" /> 
 </manifest>
