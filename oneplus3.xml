@@ -14,8 +14,8 @@
   <project path="vendor/oneplus/oneplus3" name="ittat/vendor_oneplus_oneplus3" remote="github" revision="b2g_q" />
   <project path="kernel/oneplus/msm8996" name="PixelExperience-Devices/kernel_oneplus_msm8996"   remote="github" revision="ten" />
   <project path="device/qcom/sepolicy-legacy-um" name="PixelExperience/device_qcom_sepolicy-legacy-um"   remote="github" revision="ten" />
-  <project path="vendor/aosp" name="ittat/vendor_aosp"   remote="github" revision="b2g_q" />
-<!--   <project path="vendor/aosp" name="ittat/vendor_aosp-1"   remote="github" revision="aosp" /> -->
+<!--   <project path="vendor/aosp" name="ittat/vendor_aosp"   remote="github" revision="b2g_q" /> -->
+  <project path="vendor/aosp" name="ittat/vendor_aosp-1"   remote="github" revision="aosp" />
   <project path="hardware/qcom-caf/common" name="PixelExperience/hardware_qcom-caf_common" remote="github" revision="ten" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
