@@ -8,5 +8,32 @@
   <project path="vendor/oneplus/oneplus3" name="ittat/vendor_oneplus_oneplus3" remote="github" revision="b2g_q" />
   <project path="kernel/oneplus/msm8996" name="PixelExperience-Devices/kernel_oneplus_msm8996"   remote="github" revision="ten" />
   <project path="device/qcom/sepolicy-legacy-um" name="PixelExperience/device_qcom_sepolicy-legacy-um"   remote="github" revision="ten" />
-  <project path="vendor/aosp" name="PixelExperience/vendor_aosp"   remote="github" revision="ten" />
+  <project path="vendor/aosp" name="ittat/vendor_aosp"   remote="github" revision="b2g_q" />
+  <project path="hardware/qcom-caf/common" name="PixelExperience/hardware_qcom-caf_common" remote="github" revision="ten" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+  </project>
+  
+  <remote name="lineage"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-17.1" />
+  
+  <project path="hardware/qcom-caf/msm8994/audio" name="android_hardware_qcom_audio" revision="lineage-17.1-caf-msm8994" remote="lineage" />
+  <project path="hardware/qcom-caf/msm8994/display" name="android_hardware_qcom_display" revision="lineage-17.1-caf-msm8994" remote="lineage" />
+  <project path="hardware/qcom-caf/msm8994/media" name="android_hardware_qcom_media" revision="lineage-17.1-caf-msm8994" remote="lineage" />
+
+    <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="ten"
+          review="gerrit.pixelexperience.org" />
+  
+  <project path="hardware/qcom/audio" name="hardware_qcom_audio" remote="pixel" />
+  <project path="hardware/qcom/bootctrl" name="hardware_qcom_bootctrl" remote="pixel" />
+  <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="pixel" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="pixel" />
+  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="pixel" />
+  <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" remote="pixel" />
+  <project path="hardware/qcom/media" name="hardware_qcom_media" remote="pixel" />
 </manifest>
