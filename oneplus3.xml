@@ -2,6 +2,12 @@
 <manifest>
   <remote fetch="https://github.com/" name="github"/>
   <include name="base-q.xml"/>
+
+  <remove-project name="platform_build_soong" />
+  <project groups="kai" name="ittat/platform_build_soong" path="build/soong" remote="github" revision="gonk_android-10.0.0_r11">
+    <linkfile src="root.bp" dest="Android.bp"/>
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
+  </project>
   
 <!--   OnePlus 3/3T -->
   <project path="device/oneplus/oneplus3" name="ittat/device_oneplus_oneplus3" remote="github" revision="b2g_q" /> 
